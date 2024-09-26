@@ -44,3 +44,40 @@ const swiper = new Swiper('.swiper', {
   },
 }
 });
+
+// shw scrolllup
+const scrollup = () =>{
+  const scrolllupBtn = document.getElementById("scroll-up");
+  if(this.scrollY>=250){
+    scrolllupBtn.classList.remove("-bottom-1/2");
+    scrolllupBtn.classList.add("bottom-4");
+  }
+  else{
+    scrolllupBtn.classList.add("-bottom-1/2");
+    scrolllupBtn.classList.remove("bottom-4");
+  }
+}
+window.addEventListener("scroll",scrollup)
+
+
+// change background header
+
+const scrollHeader = () =>{
+  const scrolllheader = document.getElementById("nav-bar");
+  if(this.scrollY>=250){
+    scrolllheader.classList.add("border-b" ,"border-yellow-500");
+  }
+  else{
+   scrolllheader.classList.remove("border-b" ,"border-yellow-500");
+  }
+}
+window.addEventListener("scroll",scrollHeader)
+
+
+// scroll section active link
+
+// activeLink = () =>{
+
+// }
+
+// window.add("scroll",activeLink)
