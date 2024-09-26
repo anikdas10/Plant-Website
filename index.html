@@ -16,6 +16,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap" rel="stylesheet">
 
+<!-- swiper -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
       <!-- tailwind config -->
      <script>
           tailwind.config = {
@@ -111,11 +117,11 @@
                     </li>
 
                     <li>
-                        <a href="#home" class="nav-link text-lg font-bold hover:text-yellow-500 duration-300">Popular</a>
+                        <a href="#popular" class="nav-link text-lg font-bold hover:text-yellow-500 duration-300">Popular</a>
                     </li>
 
                     <li>
-                        <a href="#home" class="nav-link text-lg font-bold hover:text-yellow-500 duration-300">Review</a>
+                        <a href="#review" class="nav-link text-lg font-bold hover:text-yellow-500 duration-300">Review</a>
                     </li>
                 </ul>
 
@@ -303,7 +309,7 @@
           </section>
 
           <!-- popular-->
-          <section id="popular" class="bg-green-900 pt-20">
+          <section id="popular" class="bg-green-900 pt-20 pb-10">
             <div class="flex flex-col items-center gap-3 text-center mb-40 md:mb-34">
                 <h2 class="lobstar text-yellow-500 text-3xl md:text-4xl xl:text-5xl font-bold">Your Choice Plant</h2>
                 <p class="max-w-2xl">Follow instruction for more</p>
@@ -392,8 +398,124 @@
                  </div>
             </div>
           </section>
+
+          <!-- review section -->
+           <section id="review" class="relative mb-20 md:mb-28 overflow-hidden pt-24">
+            <div>
+                <img src="assets/img/leaf-4.png" class="w-40 md:w-52 xl:w-64 absolute -top-8 -left-12 opacity-50" alt="">
+            </div>
+             <div class="flex flex-col items-center gap-3 text-center  mb-10 md:mb-20">
+                <h2 class="lobstar text-yellow-500 text-3xl md:text-4xl xl:text-5xl font-bold">Customer Review</h2>
+                <p class="max-w-2xl">Follow instruction for more</p>
+            </div>
+
+            <div class="container">
+                <div class="swiper py-12">
+                    <ul class="swiper-wrapper">
+                       <li class="swiper-slide">
+                        <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                           <p class="lobstar">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                           </p> 
+                           <div class="flex items-center gap-3">
+                            <img src="assets/img/review-1.jpg" class="w-12 h-12 rounded-full" alt="">
+                            <div class="ml-2 text-yellow-500 uppercase">
+                            <p>John doe</p>
+                            <p>Designer</p>
+                           </div>
+                           <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                           </div>
+                           
+                           
+                        </div>
+                       </li> 
+
+                       <li class="swiper-slide">
+                        <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                           <p class="lobstar">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                           </p> 
+                           <div class="flex items-center gap-3">
+                            <img src="assets/img/review-2.jpg" class="w-12 h-12 rounded-full" alt="">
+                            <div class="ml-2 text-yellow-500 uppercase">
+                            <p>John doe</p>
+                            <p>Designer</p>
+                           </div>
+                           <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                           </div>
+                           
+                           
+                        </div>
+                       </li> 
+
+                       <li class="swiper-slide">
+                        <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                           <p class="lobstar">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                           </p> 
+                           <div class="flex items-center gap-3">
+                            <img src="assets/img/review-3.jpg" class="w-12 h-12 rounded-full" alt="">
+                            <div class="ml-2 text-yellow-500 uppercase">
+                            <p>John doe</p>
+                            <p>Designer</p>
+                           </div>
+                           <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                           </div>
+                           
+                           
+                        </div>
+                       </li> 
+
+                       <li class="swiper-slide">
+                        <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                           <p class="lobstar">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                           </p> 
+                           <div class="flex items-center gap-3">
+                            <img src="assets/img/review-4.jpg" class="w-12 h-12 rounded-full" alt="">
+                            <div class="ml-2 text-yellow-500 uppercase">
+                            <p>John doe</p>
+                            <p>Designer</p>
+                           </div>
+                           <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                           </div>
+                           
+                           
+                        </div>
+                       </li> 
+                       
+                    </ul>
+
+                      <div class="swiper-pagination"></div>
+                </div>
+            </div>
+           </section>
      </main>
 
+        <footer class="bg-yellow-100 text-green-900 pt-20 pb-10 md:pt-28 relative">
+             <!-- newsletter -->
+              <div class="container text-white absolute">
+                <div>
+                    <h3>
+                        <span class="text-yellow-500">Subscribe</span> to our newsletter
+                       
+
+                        <div>
+                            <input type="email" name="" id="" placeholder="Your Email Address">
+                            <button>
+                                <span>Subscribe</span>
+                               <i class="ri-send-plane-2-fill"></i>
+                                
+                            </button>
+                        </div>
+                    </h3>
+                </div>
+
+              </div>
+        </footer>
+
+     <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/main.js"></script>
 </body>
